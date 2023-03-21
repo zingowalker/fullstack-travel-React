@@ -9,14 +9,16 @@ const FeaturedTours = ({ type }) => {
         {
             id: 1,
             img: "https://images.unsplash.com/photo-1622833135011-928e5433feba?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mzl8fGxhZGFraHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60",
+            img2: "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8dHJhdmVsfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60",
             title: "Amazing Ladakh 06D/05N",
-            isNew: true,
+            isNew: false,
             oldPrice: 25000,
             price: 19000
         },
         {
             id: 2,
             img: "https://images.unsplash.com/photo-1541507233780-668336b2702b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mzh8fGxhZGFraHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60",
+            img2: "https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8dHJhdmVsfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60",
             title: "Culture Tour 09D/08N",
             isNew: true,
             oldPrice: 26000,
@@ -25,6 +27,7 @@ const FeaturedTours = ({ type }) => {
         {
             id: 3,
             img: "https://images.unsplash.com/photo-1592334934411-8c2b49989d29?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTF8fGxhZGFraHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60",
+            img2: "https://images.unsplash.com/photo-1503220317375-aaad61436b1b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fHRyYXZlbHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60",
             title: "Ladakh Motorbike Tour 11D/10N",
             isNew: true,
             oldPrice: 33000,
@@ -33,8 +36,9 @@ const FeaturedTours = ({ type }) => {
         {
             id: 4,
             img: "https://images.unsplash.com/photo-1606857090627-27ca46667290?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTN8fGxhZGFraHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60",
+            img2: "https://images.unsplash.com/photo-1501785888041-af3ef285b470?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTd8fHRyYXZlbHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60",
             title: "Lakes of Ladakh 08D/07N",
-            isNew: true,
+            isNew: false,
             oldPrice: 18000,
             price: 16000
         },
