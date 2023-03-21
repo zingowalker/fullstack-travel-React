@@ -43,7 +43,7 @@ function Navbar() {
                         </Link>
                     </div>
                 </div>
-                <div className="center">
+                <div className="center logo">
                     <Link className="link" to="/">
                         EpicTravels
                     </Link>
@@ -75,9 +75,9 @@ function Navbar() {
                         <span>0</span>
                     </div>
                     <button className="toggleButton" onClick={handleToggleMenu}>
-                        <span></span>
-                        <span></span>
-                        <span></span>
+                        <span className="bar"></span>
+                        <span className="bar"></span>
+                        <span className="bar"></span>
                     </button>
                 </div>
             </div>

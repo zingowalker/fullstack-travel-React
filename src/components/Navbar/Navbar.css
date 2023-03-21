@@ -1,27 +1,29 @@
 nav {
   font-family: "Roboto Flex", sans-serif;
 }
+
 .navbar {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-around;
   background-color: #fff;
   padding: 10px;
-  position: fixed;
+  position: relative;
   top: 0;
   left: 0;
   right: 0;
   z-index: 999;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  width: 100%;
+  width: 100vw;
+  height: 80px;
 }
 
 .wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
   max-width: 1200px;
+  width: 100vw;
   margin: 0 auto;
 }
 
@@ -59,14 +61,14 @@ nav {
 }
 
 .active {
-  display: flex;
+  display: block;
   flex-direction: column;
   position: absolute;
   top: 60px;
   left: 0;
   width: 100%;
   background-color: #000;
-  /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   z-index: 99;
   padding: 10px;
   color: #fff;
@@ -75,6 +77,10 @@ nav {
 .center {
   text-align: center;
   font-size: 24px;
+}
+
+.logo h1 {
+  color: #3195ff;
 }
 
 .right {
@@ -92,6 +98,10 @@ nav {
   display: flex;
   align-items: center;
   gap: 20px;
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 
 .cartIcon {
@@ -101,9 +111,9 @@ nav {
 
 .cartIcon span {
   position: absolute;
-  top: -8px;
-  right: -8px;
-  background-color: #f44336;
+  top: -10px;
+  right: -10px;
+  background-color: #3195ff;
   color: #fff;
   width: 16px;
   height: 16px;
@@ -119,14 +129,22 @@ nav {
   display: none;
 }
 
-@media (max-width: 868px) {
+@media (max-width: 768px) {
+  .navbar {
+    /* display: flex; */
+    width: 100vw;
+    padding: 2rem;
+    
+  }
+
   .toggleButton {
     display: block;
     position: relative;
     width: 25px;
-    height: 20px;
+    height: 25px;
     margin-left: auto;
     cursor: pointer;
+    background: #fff;
   }
 
   .toggleButton span {
@@ -134,40 +152,10 @@ nav {
     position: absolute;
     width: 100%;
     height: 3px;
-    background-color: #fff;
+    background-color: #000;
     transition: all 0.5s ease-in-out;
   }
 
-  /* initial state for the first span */
-  .toggleButton span:first-child {
-    top: 0;
-  }
-
-  /* initial state for the second span */
-  .toggleButton span:nth-child(2) {
-    top: 8px;
-  }
-
-  /* initial state for the third span */
-  .toggleButton span:last-child {
-    top: 16px;
-  }
-
-  /* change the background color of the first and last span when the menu is open */
-  .toggleButton.active span:first-child {
-    transform: rotate(45deg);
-    top: 8px;
-  }
-
-  .toggleButton span:nth-child(2) {
-    opacity: 0;
-  }
-
-  .toggleButton.active span:last-child {
-    transform: rotate(-45deg);
-    top: 8px;
-    
-  }
   .left {
     display: none;
   }
@@ -184,11 +172,11 @@ nav {
     display: flex;
     flex-direction: column;
     position: absolute;
-    top: 60px;
+    top: 80px;
     left: 0;
     width: 100%;
     background-color: #000;
-    /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     z-index: 99;
     padding: 10px;
     color: #fff;
@@ -197,5 +185,10 @@ nav {
   .active .item {
     margin-bottom: 0;
     padding: 0 10px;
+    border-bottom: 1px solid #fff;
+    width: 60vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }

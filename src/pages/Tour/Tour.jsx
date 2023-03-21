@@ -1,8 +1,9 @@
 import React from 'react'
+import './Tour.scss'
 
 function Tour() {
     return (
-        <div>Tour</div>
+        <div className='tour'>Tour</div>
     )
 }
 
