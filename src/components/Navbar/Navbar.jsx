@@ -72,7 +72,7 @@ function Navbar() {
                     <FavoriteOutlinedIcon />
                     <div className="cartIcon">
                         <ShoppingCartOutlinedIcon />
-                        <span>0</span>
+                        <span className="cartInd">0</span>
                     </div>
                     <button className="toggleButton" onClick={handleToggleMenu}>
                         <span className="bar"></span>
