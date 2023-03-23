@@ -5,24 +5,20 @@ import FavoriteOutlinedIcon from "@mui/icons-material/FavoriteOutlined";
 import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
 import PersonOutlinedIcon from "@mui/icons-material/PersonOutlined";
 import { Link } from "react-router-dom";
-import "./Navbar.css";
+import "./Navbar.scss";
 
 function Navbar() {
-    const [showMenu, setShowMenu] = useState(false);
 
-    const handleToggleMenu = () => {
-        setShowMenu(!showMenu);
-    };
 
     return (
         <nav className="navbar">
             <div className="wrapper">
-                <div className={`left ${showMenu ? "active" : ""}`}>
+                <div className="left">
                     <div className="item">
                         <img src="/img/en.png" alt="" />
                         <KeyboardArrowDownIcon />
                     </div>
-                    <div className="item usd">
+                    <div className="item">
                         <span>USD</span>
                         <KeyboardArrowDownIcon />
                     </div>
@@ -33,22 +29,22 @@ function Navbar() {
                         </Link>
                     </div>
                     <div className="item">
-                        <Link className="link" to="/tour/2">
+                        <Link className="link" to="/tours/2">
                             Trekking
                         </Link>
                     </div>
                     <div className="item">
-                        <Link className="link" to="/tours/3">
+                        <Link className="link" to="/tour/1">
                             Adventure
                         </Link>
                     </div>
                 </div>
-                <div className="center logo">
+                <div className="center">
                     <Link className="link" to="/">
                         EpicTravels
                     </Link>
                 </div>
-                <div className={`right ${showMenu ? "active" : ""}`}>
+                <div className="right">
                     <div className="item">
                         <Link className="link" to="/">
                             Home
@@ -64,21 +60,17 @@ function Navbar() {
                             Store
                         </Link>
                     </div>
-                </div>
 
-                <div className="icons">
-                    <SearchIcon />
-                    <PersonOutlinedIcon />
-                    <FavoriteOutlinedIcon />
-                    <div className="cartIcon">
-                        <ShoppingCartOutlinedIcon />
-                        <span className="cartInd">0</span>
+
+                    <div className="icons">
+                        <SearchIcon />
+                        <PersonOutlinedIcon />
+                        <FavoriteOutlinedIcon />
+                        <div className="cartIcon">
+                            <ShoppingCartOutlinedIcon />
+                            <span>0</span>
+                        </div>
                     </div>
-                    <button className="toggleButton" onClick={handleToggleMenu}>
-                        <span className="bar"></span>
-                        <span className="bar"></span>
-                        <span className="bar"></span>
-                    </button>
                 </div>
             </div>
         </nav>
